@@ -1,4 +1,38 @@
-body{
-    background-image: url('Astolfo-FateApocrypha-Fate-(series)-Anime-5674045.gif');
+* {
+    margin: 0;
+    padding: 0;
+    }
+.container{
+    width: 1024px;
+    height: 3000px;/* Только для теста вертикальной прокрутки */
+    margin: 0 auto;
 }
-fff
+body{ 
+    /* background-color: black; */
+     /* background-image: url('img/Astolfo-FateApocrypha-Fate-(series)-Anime-5674045.gif');  */
+     width: 100%;
+}
+#profile  {
+
+ margin-top: -20px;
+ margin-left: 300px;
+
+}
+
+
+#leftbg {
+    position: fixed;
+    margin-left: -440px;/* Отступ равен ширине фонового изображения */
+    width: 540px;/* Сюда пишем ширину левого фонового изображения */
+    height:1080px;/* Сюда высоту */
+    background: transparent url("img/Vlad_maid.gif"); /* no-repeat; */
+    }
+    #rightbg {
+        transform: scaleX(-1);
+        position: fixed;
+        margin-left: 1024px;    /* Отступ равен ширине основного контейнера */
+        width: 540px;/* Сюда пишем ширину левого фонового изображения */
+        height:1080px;        /* Сюда высоту */
+        background: transparent url("img/Vlad_maid.gif") /*no-repeat;*/
+        
+        }
