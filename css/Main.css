@@ -23,6 +23,7 @@ body{
 }
 
 .rightbg { /*правый бэкграунд*/
+    transform: scaleX(-1);
     width: 540px;
     position: fixed;
     margin-left: 1380px;
