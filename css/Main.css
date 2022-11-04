@@ -14,7 +14,7 @@ body{
      display: block; /* нужно, чтобы убрать проблемы между гифками. Так как img - строчный элемент, то браузер автоматом ставит его отсуп, поэтому я загнал его в блок и больше такой херни нет */
 }
 
-.leftbg {
+.leftbg { /*левый бэкграунд*/
     position: fixed;
     width: 540px;
     height: 1080px;
@@ -22,7 +22,7 @@ body{
     
 }
 
-.rightbg {
+.rightbg { /*правый бэкграунд*/
     width: 540px;
     position: fixed;
     margin-left: 1380px;
@@ -30,23 +30,23 @@ body{
     z-index: 1000; /* выдвигаю rightbg на самый первый план */
 }
 
-.maincont {
+.maincont { /*главный контейнер посередине между боковыми гифками*/
     width: 840px;
     margin-left: 540px;
     margin-right: 540px;
 }
 
-.gald {
+.gald { /*зона Дениса*/
+    height: 323px;  
+    border: 3px solid black;
+}
+
+.vlad { /*зона Влада*/
     height: 323px;
     border: 3px solid black;
 }
 
-.vlad {
-    height: 323px;
-    border: 3px solid black;
-}
-
-.arta {
+.arta { /*зона Артёма*/
     height: 323px;
     border: 3px solid black;
 }
