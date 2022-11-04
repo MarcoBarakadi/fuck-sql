@@ -1,38 +1,56 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box; /*Абсолютные границы контейнеров (отступы не вылезают дальше отведенной ширины и высоты)*/
     }
-.container{
-    width: 1024px;
-    height: 3000px;/* Только для теста вертикальной прокрутки */
-    margin: 0 auto;
-}
+
 body{ 
     /* background-color: black; */
      /* background-image: url('img/Astolfo-FateApocrypha-Fate-(series)-Anime-5674045.gif');  */
      width: 100%;
 }
-#profile  {
 
- margin-top: -20px;
- margin-left: 300px;
+.gif {
+     display: block; /* нужно, чтобы убрать проблемы между гифками. Так как img - строчный элемент, то браузер автоматом ставит его отсуп, поэтому я загнал его в блок и больше такой херни нет */
+}
 
+.leftbg {
+    position: fixed;
+    width: 540px;
+    height: 1080px;
+    z-index: 1000; /* выдвигаю leftbg на самый первый план */
+    
+}
+
+.rightbg {
+    width: 540px;
+    position: fixed;
+    margin-left: 1380px;
+    height: 1080px;
+    z-index: 1000; /* выдвигаю rightbg на самый первый план */
+}
+
+.maincont {
+    width: 840px;
+    margin-left: 540px;
+    margin-right: 540px;
+}
+
+.gald {
+    height: 323px;
+    border: 3px solid black;
+}
+
+.vlad {
+    height: 323px;
+    border: 3px solid black;
+}
+
+.arta {
+    height: 323px;
+    border: 3px solid black;
 }
 
 
-#leftbg {
-    position: fixed;
-    margin-left: -440px;/* Отступ равен ширине фонового изображения */
-    width: 540px;/* Сюда пишем ширину левого фонового изображения */
-    height:1080px;/* Сюда высоту */
-    background: transparent url("img/Vlad_maid.gif"); /* no-repeat; */
-    }
-    #rightbg {
-        transform: scaleX(-1);
-        position: fixed;
-        margin-left: 1024px;    /* Отступ равен ширине основного контейнера */
-        width: 540px;/* Сюда пишем ширину левого фонового изображения */
-        height:1080px;        /* Сюда высоту */
-        background: transparent url("img/Vlad_maid.gif") /*no-repeat;*/
-        
-        }
+
+
